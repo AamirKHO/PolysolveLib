@@ -4,11 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "polysolve"
-authors = [{name = "", email = ""}]
+authors = [{name = "aamir", email = "ssss@dfd.com"}]
 requires-python = ">= 3.8"
 readme = "README.md"
 description = ""
 license = {text = "BSD-3-Clause"}
+
 
 keywords = []
 dependencies = ["cowsay"]
@@ -21,3 +22,10 @@ Repository="https://github.com/XXX/polysolve.git"
 
 [tool.setuptools.dynamic]
 version = {attr = "polysolve.__version__"}
+
+[project.optional-dependencies]
+docs = ["sphinx",
+    "sphinx_rtd_theme",
+    "sphinx-autodoc-typehints"
+]
+test = ["pytest"]
